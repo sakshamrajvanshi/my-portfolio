@@ -1,15 +1,9 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
-  ],
+  darkMode: 'class', // ✅ Add this line
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {
-      scrollBehavior: {
-        smooth: 'smooth',
-      },
-    },
+    extend: {},
   },
   plugins: [],
-}
+};
